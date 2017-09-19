@@ -1,6 +1,3 @@
-$(function(){
-    console.log('DOM loaded');
-});
 $("span:even").css('color', 'red');
 
 var paragraphs = $('p');
@@ -9,6 +6,6 @@ paragraphs.each(function(index, element) {
     $(element).append(button); 
 });
 
-$("button").click(function(){
+$("button").click(function() {
     alert($(this).attr("data-tmp"));
 });
